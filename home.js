@@ -81,14 +81,14 @@ function canWeDeliver(zipCode){
 */
 
 // CODE HERE
-function canWeDeliverTwo(arr, num){
-    if(arr.includes(num) === true){
+function canWeDeliverTwo(num){
+    if(deliveryAreaZipCodes.includes(num) === true){
         return 'Youre in the delivery zone'
     } else {
         return 'Sorry, we cant deliver to that address'
     }
 }
-
+console.log(canWeDeliverTwo(85205))
 //////////////////PROBLEM 3////////////////////
 /* 
     Below is an array of objects that have some
@@ -123,6 +123,9 @@ const deals = [
 */
 
 //CODE HERE
+const newDeal = deals.replace('15', '10')
+
+console.log(newDeal)
 
 
 
@@ -140,3 +143,4 @@ const deals = [
 */
 
 //CODE HERE
+const newDesc = deals.replace('March', 'April')

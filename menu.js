@@ -31,6 +31,14 @@
 */
 
 //CODE HERE
+let pizza = {
+    Name: 'Supreme',
+    Price: 2.99,
+    Category: 'Entree',
+    Popularity: 10,
+    Rating: 5,
+    Tags: ['delicious', 'extra gluten']
+}
 
 
 
@@ -43,7 +51,7 @@
 */
 
 //CODE HERE
-
+// console.log(pizza.Rating)
 
 /*
     Second, log the second tag in your pizza's
@@ -53,6 +61,7 @@
 */
 
 //CODE HERE
+// console.log(pizza['Tags'])
 
 
 /*
@@ -63,6 +72,8 @@
 */
 
 //CODE HERE
+// let {Price: newPrice} = pizza
+
 
 
 /*
@@ -73,6 +84,12 @@
 */
 
 //CODE HERE
+// let {Name: newName} = pizza;
+// let {Price: newPrice} = pizza;
+// let {Category: newCategory} = pizza;
+// let {Popularity: newPopularity} = pizza;
+// let {Rating: newRating} = pizza;
+// let {Tags: newTags} = pizza
 
 
 //////////////////PROBLEM 3////////////////////
@@ -88,8 +105,44 @@
 */
 
 //CODE HERE
+foodArr = [
 
+{
+    name: 'big burger',
+    price: 5.99,
+    category: 'burgers',
+    popularity: 7,
+    rating: 4,
+    tags: ['good', 'unhealthy']
+},
 
+{
+    name: 'the salad',
+    price: 4.99,
+    category: 'salads',
+    popularity: 4,
+    rating: 5,
+    tags: ['healthy', 'vegetarian']
+},
+
+{
+    name: 'lasagna platter',
+    price: 11.99,
+    category: 'pasta',
+    popularity: 10,
+    rating: 5,
+    tags: ['noodles', 'tomato sauce']
+},
+
+{
+    name: 'its a spaghetti',
+    price: 9.99,
+    category: 'pasta',
+    popularity: 9,
+    rating: 5,
+    tags: ['noodles', 'tomato sauce']
+}
+]
 
 //////////////////PROBLEM 4////////////////////
 /* 
@@ -105,8 +158,11 @@
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
 
+const filteredFood = foodArr.filter(function(elem){
+    return elem.tags === 'vegetarian'
+})
+console.log(filteredFood)
 
 
 //////////////////PROBLEM 5////////////////////
