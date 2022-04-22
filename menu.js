@@ -105,7 +105,7 @@ let pizza = {
 */
 
 //CODE HERE
-foodArr = [
+const foodArr = [
 
 {
     name: 'big burger',
@@ -158,12 +158,16 @@ foodArr = [
 
 //CODE HERE
 
+// const filteredFood = foodArr.filter(function(elem){
+//     return elem.tags === 'vegetarian'
+// })
+// console.log(filteredFood)
 
-const filteredFood = foodArr.filter(function(elem){
-    return elem.tags === 'vegetarian'
+const filteredFood = foodArr.filter((food) => {
+    if(food.tags.includes('pasta')) {
+        return food;
+    } 
 })
-console.log(filteredFood)
-
 
 //////////////////PROBLEM 5////////////////////
 /* 
@@ -205,6 +209,18 @@ console.log(filteredFood)
 */
 
 //CODE HERE
+const filterByProperty = (property, number, type) => {
+    const filteredArray = foodArr.filter((food) => {
+        if(type === 'above') {
+            return food[property] >= number;
+        } else if (type === 'below') {
+            return food[property] <= number;
+        }
+    })
+
+    return filteredArray;
+
+}
 
 
 /*
