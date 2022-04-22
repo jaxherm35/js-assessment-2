@@ -115,7 +115,7 @@ class manager extends class employee {
 */
 
 //CODE HERE
-const manager = new manager('Winston', 'weekday mornings & afternoons', 'Cece and Schmidt')
+const manager = new Manager('Winston', 'weekday mornings & afternoons', 'Cece and Schmidt')
 
 
 /*
